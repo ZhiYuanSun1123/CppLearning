@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/project/Code/C++/Test/day2/src/../target/03_average'
+relocations:     []
+...

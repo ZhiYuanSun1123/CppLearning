@@ -1,0 +1,30 @@
+{
+    /**
+    主要是对一下内容进行配置
+    代码跳转
+    头文件识别
+    自动补全
+    红色波浪线报错
+    宏定义解析
+    IntelliSense 智能提示
+    **/
+    "configurations":[
+        {
+            "name":"Mac",
+            // 对头文件的位置进行指定
+            "includePath":[
+                "${fileDirname}/../include"
+            ],
+            //宏定义
+            "defines":[],
+            //指定编译器位置
+            "compilerPath": "/usr/bin/clang++",
+            "cStandard": "c17",
+            //对c++语法标准进行指定
+            "cppStandard":"c++17",
+            //智能提示用什么平台/编译器解析代码主要是解决编译器语法红线的问题
+            "intelliSenseMode": "macos-clang-arm64"
+        }
+    ],
+    "version":4
+}

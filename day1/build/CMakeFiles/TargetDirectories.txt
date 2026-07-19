@@ -1,0 +1,3 @@
+/Users/zhubulandeshuizhuyu/project/Code/C++/Test/day1/build/CMakeFiles/hello.dir
+/Users/zhubulandeshuizhuyu/project/Code/C++/Test/day1/build/CMakeFiles/edit_cache.dir
+/Users/zhubulandeshuizhuyu/project/Code/C++/Test/day1/build/CMakeFiles/rebuild_cache.dir

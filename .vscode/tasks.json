@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "demo",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/../target/${fileBasenameNoExtension}",
+                "-I",
+                "${fileDirname}/../include"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
