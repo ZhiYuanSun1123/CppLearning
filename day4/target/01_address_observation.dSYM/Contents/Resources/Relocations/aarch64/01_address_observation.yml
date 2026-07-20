@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day4/src/../target/01_address_observation'
+relocations:     []
+...
