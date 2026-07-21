@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day5/src/../target/08_copy_to_dynamic_array'
+relocations:     []
+...
