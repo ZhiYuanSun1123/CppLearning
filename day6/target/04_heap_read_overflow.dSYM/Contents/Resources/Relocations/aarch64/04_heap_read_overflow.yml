@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day6/src/../target/04_heap_read_overflow'
+relocations:     []
+...
