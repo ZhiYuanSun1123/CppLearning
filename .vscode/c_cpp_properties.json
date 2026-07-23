@@ -13,7 +13,7 @@
             "name":"Mac",
             // 对头文件的位置进行指定
             "includePath":[
-                "${fileDirname}/../include"
+                "${workspaceFolder}/**"
             ],
             //宏定义
             "defines":[],
