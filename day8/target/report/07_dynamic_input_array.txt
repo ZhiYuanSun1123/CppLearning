@@ -1,0 +1,20 @@
+AddressSanitizer:DEADLYSIGNAL
+=================================================================
+==62775==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000104110c90 bp 0x00016bcee6a0 sp 0x00016bcee5a0 T0)
+==62775==The signal is caused by a READ memory access.
+==62775==Hint: address points to the zero page.
+    #0 0x000104110c90 in main 07_dynamic_input_array.cpp:30
+    #1 0x00018b5cfdfc in start+0x1b4c (dyld:arm64e+0x1fdfc)
+
+==62775==Register values:
+ x[0] = 0x0000000000000000   x[1] = 0x00000001041c40d0   x[2] = 0x000000016bcedcf0   x[3] = 0x0000603000001c20  
+ x[4] = 0x0000000000000014   x[5] = 0x0000000000000014   x[6] = 0x000000016b4f4000   x[7] = 0x0000000000000001  
+ x[8] = 0x0000000000000000   x[9] = 0x0000000000000000  x[10] = 0x0000000000000000  x[11] = 0x000000000000000f  
+x[12] = 0x0000000000000000  x[13] = 0xffffffffffffffff  x[14] = 0x0000000000000000  x[15] = 0x00007fffffffffff  
+x[16] = 0x000000018b997090  x[17] = 0x00000001047cc558  x[18] = 0x0000000000000000  x[19] = 0x000000016bcee5e0  
+x[20] = 0x00000001f78e0100  x[21] = 0x000000016bcee738  x[22] = 0xfffffffffffffff0  x[23] = 0x00000001f7b97660  
+x[24] = 0x0000000000000001  x[25] = 0x000000016bcee8a0  x[26] = 0x00000001f7b97670  x[27] = 0x0000000000000000  
+x[28] = 0x0000000000000000     fp = 0x000000016bcee6a0     lr = 0x0000000104110c04     sp = 0x000000016bcee5a0  
+AddressSanitizer can not provide additional info.
+SUMMARY: AddressSanitizer: SEGV 07_dynamic_input_array.cpp:30 in main
+==62775==ABORTING

@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day8/src/../target/09_memory_safe_score_analyzer'
+relocations:     []
+...
