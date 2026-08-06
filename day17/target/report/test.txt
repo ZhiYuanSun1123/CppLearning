@@ -1,0 +1,7 @@
+[PASS] valid request stores audio path
+[PASS] valid request stores question
+[PASS] empty audio path throws invalid_argument
+[PASS] unavailable backend is rejected
+[PASS] interface dispatch Whisper
+[PASS] interface dispatch Qwen
+[PASS] Whisper count increase by one
