@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day18/src/../target/03_intentional_leak'
+relocations:     []
+...
