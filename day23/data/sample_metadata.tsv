@@ -1,0 +1,5 @@
+path\tsample_rate\tchannels\tduration_seconds\tlabel\tquality_score
+meeting.wav\t16000\t1\t12.5\tspeech\t0.95
+music.wav\t44100\t2\t180.0\tmusic\t0.88
+noise.wav\t48000\t1\t5.2\tnoise\t0.72
+interview.wav\t16000\t1\t45.0\tspeech\t0.91
