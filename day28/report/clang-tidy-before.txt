@@ -1,0 +1,41 @@
+6 errors generated.
+Error while processing /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day23/src/audio_metadata_index.cpp.
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/__algorithm/find.h:52:41: error: comparison between pointer and integer ('char' and 'const char *') [clang-diagnostic-error]
+   52 |     if (std::__invoke(__proj, *__first) == __value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/__algorithm/find.h:60:15: note: in instantiation of function template specialization 'std::__find_loop<char *, char *, char[5], std::__identity>' requested here
+   60 |   return std::__find_loop(std::move(__first), std::move(__last), __value, __proj);
+      |               ^
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/__algorithm/find.h:234:21: note: in instantiation of function template specialization 'std::__find<char *, char *, char[5], std::__identity>' requested here
+  234 |       __first, std::__find(std::__unwrap_iter(__first), std::__unwrap_iter(__last), __value, __proj));
+      |                     ^
+/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day23/src/audio_metadata_index.cpp:55:26: note: in instantiation of function template specialization 'std::find<std::__wrap_iter<char *>, char[5]>' requested here
+   55 |     auto iterator = std::find(path.begin(),path.end(),".WAV");
+      |                          ^
+day23/include/audio_metadata_index.hpp:43:36: error: template argument for template type parameter must be a type [clang-diagnostic-error]
+   43 |     std::unordered_map<std::string,std::set<std::string>> paths_by_label_;
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/unordered_map:880:17: note: template parameter is declared here
+  880 |           class _Tp,
+      |                 ^
+day23/include/audio_metadata_index.hpp:43:41: error: no template named 'set' in namespace 'std'; did you mean 'get'? [clang-diagnostic-error]
+   43 |     std::unordered_map<std::string,std::set<std::string>> paths_by_label_;
+      |                                    ~~~~~^~~
+      |                                         get
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/tuple:1118:1: note: 'get' declared here
+ 1118 | get(tuple<_Tp...>& __t) _NOEXCEPT {
+      | ^
+day23/include/audio_metadata_index.hpp:44:18: error: template argument for template type parameter must be a type [clang-diagnostic-error]
+   44 |     std::map<int,std::set<std::string>> paths_by_sample_rate_;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/map:922:29: note: template parameter is declared here
+  922 | template <class _Key, class _Tp, class _Compare = less<_Key>, class _Allocator = allocator<pair<const _Key, _Tp> > >
+      |                             ^
+day23/include/audio_metadata_index.hpp:44:23: error: no template named 'set' in namespace 'std'; did you mean 'get'? [clang-diagnostic-error]
+   44 |     std::map<int,std::set<std::string>> paths_by_sample_rate_;
+      |                  ~~~~~^~~
+      |                       get
+/opt/homebrew/Cellar/llvm/22.1.8_2/bin/../include/c++/v1/tuple:1118:1: note: 'get' declared here
+ 1118 | get(tuple<_Tp...>& __t) _NOEXCEPT {
+      | ^
+Found compiler error(s).

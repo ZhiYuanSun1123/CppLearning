@@ -1,0 +1,15 @@
+---
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-use-after-move,
+  bugprone-sizeof-expression,
+  bugprone-unused-return-value,
+  performance-for-range-copy,
+  performance-unnecessary-copy-initialization,
+  modernize-use-nullptr,
+  modernize-use-override,
+  modernize-make-unique
+WarningsAsErrors: ''
+HeaderFilterRegex: '.*/CppLearning/(day13|day17|day23)/.*'
+FormatStyle: none
