@@ -2,6 +2,7 @@
 #define METADATA_ERROR_HPP
 
 #include <cstddef>
+#include <optional>
 #include <string>
 
 enum class MetadataErrorCode {

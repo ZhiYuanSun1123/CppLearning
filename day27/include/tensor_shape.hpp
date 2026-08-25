@@ -1,11 +1,12 @@
 #ifndef TENSOR_SHAPE_HPP
 #define TENSOR_SHAPE_HPP
 
-#include<cstddef>
-#include<initializer_list>
-#include<optional>
-#include<vector>
-class TensorShape{
+#include <cstddef>
+#include <initializer_list>
+#include <optional>
+#include <vector>
+
+class TensorShape {
 public:
     TensorShape();
     explicit TensorShape(
@@ -27,4 +28,10 @@ public:
 private:
     std::vector<std::size_t> dimensions_;
 };
+
+[[nodiscard]] bool operator==(
+    const TensorShape& left,
+    const TensorShape& right
+) noexcept;
+
 #endif
