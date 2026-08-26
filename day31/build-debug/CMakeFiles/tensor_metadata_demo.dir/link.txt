@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/tensor_metadata_demo.dir/app/main.cpp.o -o tensor_metadata_demo  libtensor_metadata.a _deps/fmt-build/libfmtd.a

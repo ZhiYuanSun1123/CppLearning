@@ -1,5 +1,5 @@
 #include "tensor_metadata.hpp"
-
+#include<fmt/format.h>
 #include <cstddef>
 #include <exception>
 #include <iostream>
@@ -51,6 +51,15 @@ void print_metadata(const TensorMetadata& metadata) {
 }
 
 } // namespace
+[[nodiscard]] const char* build_mode() noexcept {
+#if defined(TENSOR_DEMO_DEBUG)
+    return "Debug";
+#elif defined(TENSOR_DEMO_RELEASE)
+    return "Release";
+#else
+    return "Unknown";
+#endif
+}
 
 int main() {
     try {
@@ -70,6 +79,13 @@ int main() {
             << '\n';
         return 1;
     }
+
+    std::cout
+        << fmt::format(
+            "Tensor metadata demo [{}]",
+            build_mode()
+        )
+        << std::endl;
 
     return 0;
 }

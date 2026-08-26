@@ -8,6 +8,15 @@ project(
 # 设置属性
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+include(FetchContent)
+FetchContent_Declare(
+    fmt
+    GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+    GIT_TAG 11.2.0
+    GIT_SHALLOW TRUE
+)
+FetchContent_MakeAvailable(fmt)
+
 # 构建一个INTERFACE库来保存构建参数
 add_library(project_warnings INTERFACE)
 target_compile_options(
@@ -65,6 +74,13 @@ target_link_libraries(
     PRIVATE
     tensor_metadata
     project_warnings
+    fmt::fmt
+)
+target_compile_definitions(
+    tensor_metadata_demo
+    PRIVATE
+    "$<$<CONFIG:Debug>:TENSOR_DEMO_DEBUG=1>"
+    "$<$<CONFIG:Release>:TENSOR_DEMO_RELEASE=1>"
 )
 
 # 构建测试

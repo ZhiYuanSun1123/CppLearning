@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/cmake_install.cmake",
+		"/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

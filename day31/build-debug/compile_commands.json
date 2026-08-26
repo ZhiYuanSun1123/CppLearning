@@ -1,0 +1,56 @@
+[
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata.dir/src/data_type.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/data_type.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/data_type.cpp",
+  "output": "CMakeFiles/tensor_metadata.dir/src/data_type.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata.dir/src/device.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/device.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/device.cpp",
+  "output": "CMakeFiles/tensor_metadata.dir/src/device.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata.dir/src/tensor_layout.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_layout.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_layout.cpp",
+  "output": "CMakeFiles/tensor_metadata.dir/src/tensor_layout.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata.dir/src/tensor_shape.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_shape.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_shape.cpp",
+  "output": "CMakeFiles/tensor_metadata.dir/src/tensor_shape.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata.dir/src/tensor_metadata.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_metadata.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/src/tensor_metadata.cpp",
+  "output": "CMakeFiles/tensor_metadata.dir/src/tensor_metadata.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++ -DTENSOR_DEMO_DEBUG=1 -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata_demo.dir/app/main.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/app/main.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/app/main.cpp",
+  "output": "CMakeFiles/tensor_metadata_demo.dir/app/main.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/include -g -std=c++17 -arch arm64 -Wall -Wextra -Wpedantic -o CMakeFiles/tensor_metadata_tests.dir/tests/test_tensor_metadata.cpp.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/tests/test_tensor_metadata.cpp",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day27/tests/test_tensor_metadata.cpp",
+  "output": "CMakeFiles/tensor_metadata_tests.dir/tests/test_tensor_metadata.cpp.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-build",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/include -g -arch arm64 -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/src/format.cc",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/src/format.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o"
+},
+{
+  "directory": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-build",
+  "command": "/usr/bin/c++  -I/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/include -g -arch arm64 -o CMakeFiles/fmt.dir/src/os.cc.o -c /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/src/os.cc",
+  "file": "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day31/build-debug/_deps/fmt-src/src/os.cc",
+  "output": "_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o"
+}
+]
