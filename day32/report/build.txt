@@ -1,0 +1,18 @@
+[ 23%] Building CXX object CMakeFiles/tensor_metadata.dir/src/data_type.cpp.o
+[ 23%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[ 23%] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+[ 30%] Building CXX object CMakeFiles/tensor_metadata.dir/src/tensor_shape.cpp.o
+[ 38%] Building CXX object CMakeFiles/tensor_metadata.dir/src/device.cpp.o
+[ 38%] Built target CLI11
+[ 46%] Building CXX object CMakeFiles/tensor_metadata.dir/src/tensor_layout.cpp.o
+[ 53%] Building CXX object CMakeFiles/tensor_metadata.dir/src/tensor_metadata.cpp.o
+[ 61%] Linking CXX static library libtensor_metadata.a
+[ 61%] Built target tensor_metadata
+[ 69%] Building CXX object CMakeFiles/tensor_metadata_tests.dir/tests/test_tensor_metadata.cpp.o
+[ 76%] Linking CXX executable tensor_metadata_tests
+[ 76%] Built target tensor_metadata_tests
+[ 84%] Linking CXX static library libfmt.a
+[ 84%] Built target fmt
+[ 92%] Building CXX object CMakeFiles/tensor_metadata_demo.dir/app/main.cpp.o
+[100%] Linking CXX executable tensor_metadata_demo
+[100%] Built target tensor_metadata_demo

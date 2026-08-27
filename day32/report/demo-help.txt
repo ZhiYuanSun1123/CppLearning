@@ -1,0 +1,9 @@
+name=mel_features
+shape=[1,3000,80]
+rank=3
+dtype=float32
+layout=batch_time_feature
+device=cpu:0
+numel=240000
+bytes=960000
+Tensor metadata demo [Release]

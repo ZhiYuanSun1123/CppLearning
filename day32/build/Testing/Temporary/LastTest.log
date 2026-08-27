@@ -1,0 +1,80 @@
+Start testing: Aug 27 19:39 CST
+----------------------------------------------------------
+1/1 Testing: tensor_metadata_tests
+1/1 Test: tensor_metadata_tests
+Command: "/Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day32/build/tensor_metadata_tests"
+Directory: /Users/zhubulandeshuizhuyu/Project/Code/C++/CppLearning/day32/build
+"tensor_metadata_tests" start time: Aug 27 19:39 CST
+Output:
+----------------------------------------------------------
+[PASS] float32名称
+[PASS] float16名称
+[PASS] int32名称
+[PASS] int8名称
+[PASS] boolean名称
+[PASS] float32占4字节
+[PASS] float16占2字节
+[PASS] int32占4字节
+[PASS] int8占1字节
+[PASS] boolean占1字节
+[PASS] 非法dtype名称为unknown
+[PASS] 非法dtype没有字节数
+[PASS] contiguous名称
+[PASS] batch_channel_time名称
+[PASS] batch_time_feature名称
+[PASS] contiguous不限制rank
+[PASS] batch_channel_time要求rank 3
+[PASS] batch_time_feature要求rank 3
+[PASS] CPU类型
+[PASS] CPU编号
+[PASS] CPU字符串
+[PASS] 加速器字符串
+[PASS] 设备相等
+[PASS] 设备不等
+[PASS] CPU拒绝非0编号
+[PASS] 设备拒绝负编号
+[PASS] 拒绝非法设备类型
+[PASS] 标量rank为0
+[PASS] 默认shape是标量
+[PASS] 标量不是空张量
+[PASS] 标量有1个元素
+[PASS] 普通shape rank为3
+[PASS] 读取axis 0
+[PASS] 读取axis 1
+[PASS] 读取axis 2
+[PASS] 普通shape numel
+[PASS] 普通shape不是标量
+[PASS] 普通shape不是空张量
+[PASS] 越界axis抛出out_of_range
+[PASS] 空张量rank仍为3
+[PASS] 零维度表示空张量
+[PASS] 空张量numel为0
+[PASS] 元素数溢出返回nullopt
+[PASS] 包含零维度时元素数为0
+[PASS] 相同shape相等
+[PASS] 不同shape不等
+[PASS] 元数据名称
+[PASS] 元数据rank
+[PASS] 元数据dtype
+[PASS] 元数据layout
+[PASS] 元数据device
+[PASS] Mel特征元素数
+[PASS] Mel特征字节数
+[PASS] float32标量占4字节
+[PASS] 空张量字节数为0
+[PASS] 溢出张量字节数为nullopt
+[PASS] 拒绝空名称
+[PASS] 拒绝layout和rank不匹配
+[PASS] 拒绝非法dtype
+[PASS] 拒绝非法layout
+
+Total: 60, Passed: 60, Failed: 0
+<end of output>
+Test time =   2.20 sec
+----------------------------------------------------------
+Test Passed.
+"tensor_metadata_tests" end time: Aug 27 19:39 CST
+"tensor_metadata_tests" time elapsed: 00:00:02
+----------------------------------------------------------
+
+End testing: Aug 27 19:39 CST

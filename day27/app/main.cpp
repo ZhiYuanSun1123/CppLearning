@@ -3,6 +3,7 @@
 #include <cstddef>
 #include <exception>
 #include <iostream>
+#include<CLI/CLI.hpp>
 
 namespace {
 
@@ -61,11 +62,50 @@ void print_metadata(const TensorMetadata& metadata) {
 #endif
 }
 
-int main() {
+int main(int argc,char* argv[]) {
+    CLI::App app{
+        "Inspect tensor metadata for an audio inference input"
+    };
+    std::string name = "mel_features";
+    std::size_t batch = 1;
+    std::size_t time = 3000;
+    std::size_t feature = 80;
+    int device_index = 0;
+
+    app.add_option(
+        "--name",
+        name,
+        "Tensor name"
+    );
+
+    app.add_option(
+        "--batch",
+        batch,
+        "Batch dimension"
+    )->check(CLI::PositiveNumber);
+
+    app.add_option(
+        "--time",
+        time,
+        "Time-frame dimension"
+    )->check(CLI::PositiveNumber);
+
+    app.add_option(
+        "--feature",
+        feature,
+        "Feature dimension"
+    )->check(CLI::PositiveNumber);
+
+    app.add_option(
+        "--device-index",
+        device_index,
+        "Accelerator device index"
+    )->check(CLI::NonNegativeNumber);
+    CLI11_PARSE(app, argc, argv);
     try {
         const TensorMetadata metadata(
             "mel_features",
-            TensorShape({1, 3000, 80}),
+            TensorShape({batch, time, feature}),
             DataType::float32,
             TensorLayout::batch_time_feature,
             Device(DeviceType::cpu, 0)

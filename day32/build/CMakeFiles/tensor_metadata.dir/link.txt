@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtensor_metadata.a CMakeFiles/tensor_metadata.dir/src/data_type.cpp.o CMakeFiles/tensor_metadata.dir/src/device.cpp.o CMakeFiles/tensor_metadata.dir/src/tensor_layout.cpp.o CMakeFiles/tensor_metadata.dir/src/tensor_shape.cpp.o CMakeFiles/tensor_metadata.dir/src/tensor_metadata.cpp.o
+/usr/bin/ranlib libtensor_metadata.a
