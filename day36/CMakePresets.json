@@ -1,0 +1,46 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {"major": 3, "minor": 21, "patch": 0},
+  "configurePresets": [
+    {
+      "name": "debug",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "BUILD_TESTING": "ON",
+        "DAY36_BUILD_EXERCISES": "OFF"
+      }
+    },
+    {
+      "name": "practice",
+      "inherits": "debug",
+      "binaryDir": "${sourceDir}/build/practice",
+      "cacheVariables": {"DAY36_BUILD_EXERCISES": "ON"}
+    },
+    {
+      "name": "release",
+      "inherits": "debug",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {"CMAKE_BUILD_TYPE": "Release"}
+    },
+    {
+      "name": "asan",
+      "inherits": "debug",
+      "binaryDir": "${sourceDir}/build/asan",
+      "cacheVariables": {"DAY36_ENABLE_SANITIZERS": "ON"}
+    }
+  ],
+  "buildPresets": [
+    {"name": "debug", "configurePreset": "debug", "jobs": 4},
+    {"name": "practice", "configurePreset": "practice", "jobs": 4},
+    {"name": "release", "configurePreset": "release", "jobs": 4},
+    {"name": "asan", "configurePreset": "asan", "jobs": 4}
+  ],
+  "testPresets": [
+    {"name": "debug", "configurePreset": "debug", "output": {"outputOnFailure": true}},
+    {"name": "practice", "configurePreset": "practice", "output": {"outputOnFailure": true}},
+    {"name": "release", "configurePreset": "release", "output": {"outputOnFailure": true}},
+    {"name": "asan", "configurePreset": "asan", "output": {"outputOnFailure": true}}
+  ]
+}
