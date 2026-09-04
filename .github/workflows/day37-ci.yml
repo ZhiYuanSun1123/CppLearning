@@ -1,0 +1,69 @@
+name: Day37 C++ CI
+
+on:
+  push:
+    paths:
+      - "day37/**"
+      - ".github/workflows/day37-ci.yml"
+  pull_request:
+    paths:
+      - "day37/**"
+      - ".github/workflows/day37-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: day37-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  format:
+    name: Format check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes clang-format
+
+      - name: Check C++ formatting
+        working-directory: day37
+        run: bash scripts/check-format.sh
+
+  build-and-test:
+    name: ${{ matrix.os }} / ${{ matrix.build_type }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        build_type: [Debug, Release]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Configure
+        working-directory: day37
+        run: >-
+          cmake -S . -B build/ci
+          -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+          -DBUILD_TESTING=ON
+
+      - name: Build
+        working-directory: day37
+        run: cmake --build build/ci --parallel 4
+
+      - name: Test
+        working-directory: day37
+        run: >-
+          ctest --test-dir build/ci
+          --build-config ${{ matrix.build_type }}
+          --output-on-failure
