@@ -1,0 +1,51 @@
+name: Day38 Test Report
+
+on:
+  push:
+    paths:
+      - "day38/**"
+      - ".github/workflows/day38-test-report.yml"
+  pull_request:
+    paths:
+      - "day38/**"
+      - ".github/workflows/day38-test-report.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Configure
+        working-directory: day38
+        run: cmake --preset debug
+
+      - name: Build
+        working-directory: day38
+        run: cmake --build --preset debug
+
+      - name: Repeat tests to detect instability
+        working-directory: day38
+        run: bash scripts/repeat-tests.sh 20
+
+      - name: Generate JUnit test report
+        working-directory: day38
+        run: >-
+          ctest --test-dir build/debug
+          --output-on-failure
+          --output-junit "$GITHUB_WORKSPACE/day38/report/test-results.xml"
+
+      - name: Upload test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: day38-test-results
+          path: day38/report/test-results.xml
+          if-no-files-found: error
